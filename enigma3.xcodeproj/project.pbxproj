@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		40C547DB1FBF249500F04376 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C547DA1FBF249500F04376 /* main.cpp */; };
+		40C547E41FBF59CE00F04376 /* reflector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C547E21FBF59CE00F04376 /* reflector.cpp */; };
+		40C547E71FBF59E200F04376 /* rotor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C547E51FBF59E200F04376 /* rotor.cpp */; };
+		40C547EA1FBF59FA00F04376 /* plugboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C547E81FBF59FA00F04376 /* plugboard.cpp */; };
+		40C547EE1FBF5A4100F04376 /* helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C547EC1FBF5A4100F04376 /* helper.cpp */; };
+		40C547F11FBF5BAD00F04376 /* enigma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40C547EF1FBF5BAD00F04376 /* enigma.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,18 @@
 
 /* Begin PBXFileReference section */
 		40C547D71FBF249500F04376 /* enigma3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = enigma3; sourceTree = BUILT_PRODUCTS_DIR; };
-		40C547DA1FBF249500F04376 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		40C547DA1FBF249500F04376 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = enigma3/main.cpp; sourceTree = "<group>"; };
+		40C547E21FBF59CE00F04376 /* reflector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reflector.cpp; sourceTree = "<group>"; };
+		40C547E31FBF59CE00F04376 /* reflector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reflector.h; sourceTree = "<group>"; };
+		40C547E51FBF59E200F04376 /* rotor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rotor.cpp; path = enigma3/rotor.cpp; sourceTree = "<group>"; };
+		40C547E61FBF59E200F04376 /* rotor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rotor.h; path = enigma3/rotor.h; sourceTree = "<group>"; };
+		40C547E81FBF59FA00F04376 /* plugboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = plugboard.cpp; path = enigma3/plugboard.cpp; sourceTree = "<group>"; };
+		40C547E91FBF59FA00F04376 /* plugboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = plugboard.h; path = enigma3/plugboard.h; sourceTree = "<group>"; };
+		40C547EB1FBF5A2E00F04376 /* errors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = errors.h; sourceTree = "<group>"; };
+		40C547EC1FBF5A4100F04376 /* helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helper.cpp; sourceTree = "<group>"; };
+		40C547ED1FBF5A4100F04376 /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
+		40C547EF1FBF5BAD00F04376 /* enigma.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = enigma.cpp; path = enigma3/enigma.cpp; sourceTree = "<group>"; };
+		40C547F01FBF5BAD00F04376 /* enigma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enigma.h; path = enigma3/enigma.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +57,18 @@
 		40C547CE1FBF249500F04376 = {
 			isa = PBXGroup;
 			children = (
+				40C547E21FBF59CE00F04376 /* reflector.cpp */,
+				40C547E81FBF59FA00F04376 /* plugboard.cpp */,
+				40C547E91FBF59FA00F04376 /* plugboard.h */,
+				40C547E31FBF59CE00F04376 /* reflector.h */,
+				40C547E51FBF59E200F04376 /* rotor.cpp */,
+				40C547E61FBF59E200F04376 /* rotor.h */,
+				40C547EB1FBF5A2E00F04376 /* errors.h */,
+				40C547EC1FBF5A4100F04376 /* helper.cpp */,
+				40C547ED1FBF5A4100F04376 /* helper.h */,
+				40C547DA1FBF249500F04376 /* main.cpp */,
+				40C547EF1FBF5BAD00F04376 /* enigma.cpp */,
+				40C547F01FBF5BAD00F04376 /* enigma.h */,
 				40C547D91FBF249500F04376 /* enigma3 */,
 				40C547D81FBF249500F04376 /* Products */,
 			);
@@ -57,7 +85,6 @@
 		40C547D91FBF249500F04376 /* enigma3 */ = {
 			isa = PBXGroup;
 			children = (
-				40C547DA1FBF249500F04376 /* main.cpp */,
 			);
 			path = enigma3;
 			sourceTree = "<group>";
@@ -119,6 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C547E71FBF59E200F04376 /* rotor.cpp in Sources */,
+				40C547E41FBF59CE00F04376 /* reflector.cpp in Sources */,
+				40C547EE1FBF5A4100F04376 /* helper.cpp in Sources */,
+				40C547EA1FBF59FA00F04376 /* plugboard.cpp in Sources */,
+				40C547F11FBF5BAD00F04376 /* enigma.cpp in Sources */,
 				40C547DB1FBF249500F04376 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +280,7 @@
 				40C547E01FBF249500F04376 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
